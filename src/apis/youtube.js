@@ -1,4 +1,4 @@
-inport axios from 'axios';
+import axios from 'axios';
 
 const KEY = 'AIzaSyCUlXjfsEBIrPiB7ab-0pj1Rv6vcxUZAuY';
 
@@ -7,6 +7,6 @@ export default axios.create({
   params: {
       part: 'snippet',
       maxResults: 5,
-      key: KEY
+      key: `${KEY}`
   }
 });
